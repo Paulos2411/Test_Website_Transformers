@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<input type="text" id="search" placeholder="Search papers...">
+<select id="sort">
+  <option value="title">Title</option>
+  <option value="year">Year</option>
+</select>
+<ul id="papers-list">
+  {% assign papers = site.data[page.data_file] %}
+  {% for paper in papers %}
+    <li>
+      <h2 class="title">{{ paper.title }}</h2>
+      <p><strong>Authors:</strong> {{ paper.authors }}</p>
+      <p><strong>Year:</strong> <span class="year">{{ paper.year }}</span></p>
+      <p>{{ paper.summary }}</p>
+      <a href="{{ paper.link }}">Read more</a>
+    </li>
+  {% endfor %}
+</ul>
+{% include scripts.html %}

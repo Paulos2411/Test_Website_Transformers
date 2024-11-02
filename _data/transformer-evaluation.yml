@@ -1,0 +1,18 @@
+evaluations:
+  - paper: "📝Ahlmann-Eltze et al. 2024"
+    paper_link: "https://www.biorxiv.org/content/10.1101/2024.09.16.613342"
+    code: "🛠️GitHub"
+    code_link: "https://github.com/const-ae/linear_perturbation_prediction-Paper/"
+    omic_modalities: "scRNA-seq"
+    evaluated_transformers: "scGPT, scFoundation"
+    tasks: "Genetic perturbation effect prediction"
+    notes: "A simple linear model performs better than scGPT and scFoundation (and GEARS)."
+  - paper: "📝He et al. 2024"
+    paper_link: "https://www.biorxiv.org/content/10.1101/2024.01.27.577455v1"
+    code: "🛠️GitHub"
+    code_link: "https://github.com/laolintou/scPEFT"
+    omic_modalities: "scRNA-seq"
+    evaluated_transformers: "scGPT"
+    tasks: "Cell type annotation"
+    notes: "Evaluation of Parameter-Efficient Fine-Tuning (PEFT) for scGPT. Indicates that PEFT not only is more compute-efficient, but also results in better cell type prediction."
+  # ... Include all other evaluations following the same structure
